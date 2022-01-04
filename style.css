@@ -1,7 +1,8 @@
 body {
     background-color:black;
     font-family: Arial;
-    color:white
+    color:white;
+    margin: auto;
 }
 h1 {
     color:grey;
