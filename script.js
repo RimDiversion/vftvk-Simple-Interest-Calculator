@@ -4,13 +4,13 @@ function compute()
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
-    if (principal <= 0) {
+    if (parseInt(principal) <= 0) {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     };
     var interest = principal * years * rate /100;
     var year = new Date().getFullYear()+parseInt(years);
-    var total = parceInt(principal, 10) + parceInt(interest, 10);
+    var total = parseInt(principal, 10) + parseInt(interest, 10);
     document.getElementById("result2").innerHTML= "If you deposit " + principal + ",<br>"  
         + "at an interest rate of " + rate + "%.<br>"
         + "You will recieve an amount of " + total + ",<br>"
