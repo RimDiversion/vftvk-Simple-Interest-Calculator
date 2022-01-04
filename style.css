@@ -14,10 +14,11 @@ h1 {
     width:300px;
     padding:20px;
     border-radius: 25px;
-    text-align: center;
     margin: auto;
 }
 .highlight {
     background-color: yellow;
 }
-
+.center {
+    text-align: center;
+}

@@ -11,7 +11,7 @@ function compute()
         var interest = principal * years * rate /100;
         var year = new Date().getFullYear()+parseInt(years);
         var total = interest + parseInt(principal)
-        document.getElementById("result").innerHTML= "Summary: " + "<br>" 
+        document.getElementById("result").innerHTML= "<div class='center'>Summary: </div><br>" 
             + "If you deposit <span class='highlight'>" + principal +  "</span>,<br>"  
             + "at an interest rate of <span class='highlight'>" + rate + "%</span>.<br>"
             + "You will recieve an amount of: <span class='highlight'>" + interest + "</span>,<br>"
