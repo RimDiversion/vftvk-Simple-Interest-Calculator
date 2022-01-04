@@ -4,19 +4,17 @@ function compute()
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
-    if (principal <= 0) {
+    if (principal <= 0) {       // checks if principal is greater than 0
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     } else {
         var interest = principal * years * rate /100;
         var year = new Date().getFullYear()+parseInt(years);
-        var total = parseInt(principal, 10) + interest;
-        document.getElementById("result2").innerHTML= "Summary: " + "<br>" 
+        document.getElementById("result").innerHTML= "Summary: " + "<br>" 
             + "If you deposit " + principal + ",<br>"  
             + "at an interest rate of " + rate + "%.<br>"
-            + "You will recieve an amount of " + total + ",<br>"
-            + "in the year " + year;
-        document.getElementById("result").innerText= "Total interest: " + interest;
+            + "You will recieve an amount of: " + interest + ",<br>"
+            + "in the year " + year + ".<br>";
     };   
 }
 
