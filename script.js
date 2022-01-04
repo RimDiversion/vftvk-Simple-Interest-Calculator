@@ -7,7 +7,7 @@ function compute()
     //checks is pricipal is greater than 0
     if (parceInt(principal) <= 0) {
         alert("Enter a positive number");
-        document.getElementById("pricipal").focus();
+        document.getElementById("principal").focus();
     }
     var interest = principal * years * rate /100;
     var year = new Date().getFullYear()+parseInt(years);
