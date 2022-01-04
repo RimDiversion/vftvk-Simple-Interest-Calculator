@@ -10,11 +10,13 @@ function compute()
     } else {
         var interest = principal * years * rate /100;
         var year = new Date().getFullYear()+parseInt(years);
+        var total = interest + parseInt(principal)
         document.getElementById("result").innerHTML= "Summary: " + "<br>" 
             + "If you deposit <span class='highlight'>" + principal +  "</span>,<br>"  
             + "at an interest rate of <span class='highlight'>" + rate + "%</span>.<br>"
             + "You will recieve an amount of: <span class='highlight'>" + interest + "</span>,<br>"
-            + "in the year <span class='highlight'>" + year + "</span>.<br>";
+            + "in the year <span class='highlight'>" + year + "</span>.<br>"
+            + "Your total amount after interest: <span class='highlight'>" + total + "</span>";
     };   
 }
 
